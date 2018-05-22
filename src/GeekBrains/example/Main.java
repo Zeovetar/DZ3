@@ -1,8 +1,10 @@
+package GeekBrains.example;
 
+import java.util.Arrays;
 
 public class Main {
 
-
+/*
     byte bt = 25;
     short shrt = 32000;
     int nt = 214000000;
@@ -21,16 +23,43 @@ public class Main {
     int d = 2; */
 
     public static void main(String[] args) {
-        System.out.println("результат выражения=" + virajenie(4,2,10,2));
+        /*System.out.println("результат выражения=" + virajenie(4,2,10,2));
         System.out.println("Сумма лежит в диапазоне 10<=x<=20? " + check(10,7));
         negpos(29);
         System.out.println("Вернули: " + negpos2(-1));
         privet("Костя");
-        years(2004);
+        years(2004);*/
+
+
+        System.out.println(Arrays.toString(DZ2.arrr()));     //задача1
+        System.out.println(Arrays.toString(DZ2.ar8()));      //Задача2
+        System.out.println(Arrays.toString(DZ2.doublear())); //Задача3
+
+
+        //Задача4
+        int[][] c = DZ2.diag();
+        for(int i =0; i<7;i++) {
+            for (int j = 0; j < 7; j++) {
+                System.out.print(c[j][i]+"");
+            }
+            System.out.println();
+        }
+
+        //Задача5
+        System.out.println(DZ2.minmax2());
+
+        //Задача6
+        int[] arr = {0,2,-5,20,1,20,-5,3};
+        System.out.println("Признак баланcа в архиве = " + DZ2.balanced(arr));
+        //Задача7
+        int[] arr2 = {0,2,-5,20,1,20,-5,3,12};
+        int n = -12;
+        System.out.println("Архив передвинут на n= " + n + " Итог: " + Arrays.toString(DZ2.ln13(arr2,n)));
     }
 
 
 
+/*
         public static int virajenie (int a, int b, int c, int d) {
             return (a*(b+(c/d)));
         }
@@ -77,5 +106,5 @@ public class Main {
             str="не високосный";
         }
         System.out.println("Год " + str);
-    }
+    } */
     }

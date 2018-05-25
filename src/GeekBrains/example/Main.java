@@ -26,7 +26,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //DZ3.gamecifra(); //Задача1
+        DZ3.gamecifra(); //Задача1
         DZ3.gameslovo();   //Задача2
         /*System.out.println("результат выражения=" + virajenie(4,2,10,2));
         System.out.println("Сумма лежит в диапазоне 10<=x<=20? " + check(10,7));
